@@ -29,7 +29,7 @@ if t == "1":
         f.write(result)
     with open(pypath + "/news/index.json", "r") as f:
         data = json.load(f)
-    data[tag].append({"date": datetime.now().strftime("%Y/%m/%d"), "title": title})
+    data[tag].append({"date": datetime.now().strftime("%Y/%m/%d"), "title": title, "id":id})
     with open(pypath + "/news/index.json", "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     data = {
