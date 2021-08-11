@@ -17,7 +17,7 @@ if t == "1":
     title = input("タイトルを入力> ")
     author = input("あなたの名前を入力> ")
     with open(pypath + "/tags.json", "r") as f:
-        tag_data = json.load(f)
+        tag_data = json.load(f)["news"]
         tag = tag_data[int(input(
             "\n".join(list(map(lambda n: str(n[0] + 1) + " " + n[1], enumerate(tag_data))))
             + "\n> ")) - 1]
@@ -29,7 +29,7 @@ if t == "1":
         f.write(result)
     with open(pypath + "/news/index.json", "r") as f:
         data = json.load(f)
-    data[tag].append({"date": datetime.now().strftime("%Y/%m/%d"), "title": title, "id":id})
+    data[list(map(lambda n:n["name"],data)).index(tag)]["content"].append({"date": datetime.now().strftime("%Y/%m/%d"), "title": title, "id": id})
     with open(pypath + "/news/index.json", "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     data = {
