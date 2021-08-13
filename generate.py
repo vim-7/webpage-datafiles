@@ -7,6 +7,7 @@ from datetime import datetime
 from markdown.extensions.codehilite import CodeHiliteExtension
 
 pypath = os.path.dirname(os.path.abspath(__file__))
+print("ver β1.0.0")
 md_path = input("ファイル名を指定 >")
 with open(md_path) as f:
     md = markdown.Markdown(extensions=["extra", CodeHiliteExtension()])
