@@ -1,0 +1,9 @@
+{
+  "name": "いぬたぬき",
+  "description": "『ゴラクバ！』というマイクラ実況者かと思いきや、『ぼくらのキャンプ』というキャンプ系Youtuberかと思いきや、『コードアドベンチャー』っていうプログラミングスクールをやっている人だったり。",
+  "link": [
+    {"name":"twitter","url": "https://twitter.com/inutanuking"},
+    {"name": "ぼくらのキャンプ","url": "https://www.youtube.com/channel/UClFm0IK-JvaZGTRhhlwm57Q"},
+    {"name": "ゴラクバ！","url": "https://www.youtube.com/channel/UCC6NLrfzIBCkgNWZfWiF41Q"}
+  ]
+}
